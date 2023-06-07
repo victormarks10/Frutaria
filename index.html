@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sacolão Mirante </title>
+
+    <!--FONTE DE ICONES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;
+    0,700;1,100&family=Playfair:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500
+    ;0,600;0,800;1,100;1,200;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="./assets/banner.jpg" alt="banner">
+        </div>
+
+        <h1 class="title"> Novos Produtos</h1>
+
+        <div class="product-grid">
+
+            <div class="product-grid__item">
+
+                <div class="product-grid__imagem">
+                    <img src="./assets/Laranja.jpg" alt="">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name"> Laranja</p>
+                    <p class="product-grid__prince">R$9.00 / kg</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCar"> Adicionar ao carrinho</a>
+                </div>
+
+            </div>
+
+            <div class="product-grid__item">
+
+                <div class="product-grid__imagem">
+                    <img src="./assets/Maça.jpg" alt="">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name"> Maçã</p>
+                    <p class="product-grid__prince">R$5.00/ kg</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCar" > Adicionar ao carrinho</a>
+                </div>
+
+            </div>
+
+            <div class="product-grid__item">
+
+                <div class="product-grid__imagem">
+                    <img src="./assets/Limão.jpg" alt="">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name"> Limão</p>
+                    <p class="product-grid__prince">R$3.00 / kg</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCar"> Adicionar ao carrinho</a>
+                </div>
+
+            </div>
+            <div class="product-grid__item">
+
+                <div class="product-grid__imagem">
+                    <img src="./assets/Banana.jpg" alt="">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name"> Banana</p>
+                    <p class="product-grid__prince">R$5.50/ kg</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCar"> Adicionar ao carrinho</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ARRUMAR O CARRINHO-->
+        <div class="modal " id="jsModalCar">
+            <div class="modal__container">
+                <button type="button" class="modal__close fa-solid fa-xmark jsModalClose"></button>
+                <div class="modal__info">
+                    <div class="modal__header">
+                        <h2><i class="fa-brands fa-opencart"></i>Carrinho</h2>
+                    </div>
+                    <div class="modal__body">
+                        <div class="modal__list">
+                            <div class="modal__item">
+                                <div class="modal-thumb">
+                                    <img src="./assets/Laranja.jpg" alt="Laranja">
+                                </div>
+                                <div class="modal__text-product">
+                                    <p>Laranja</p>
+                                    <p><strong> R$9.00 / kg</strong></p>
+                                </div>
+                                <a href="#" class="product-grid__btn btn-remove">Remover</a>
+
+                            </div>
+
+                            <div class="modal__item">
+                                <div class="modal-thumb">
+                                    <img src="./assets/Maça.jpg" alt="Maça">
+                                </div>
+                                <div class="modal__text-product">
+                                    <p>Maça</p>
+                                    <p><strong> R$5.00 / kg</strong></p>
+                                </div>
+                                <a href="#" class="product-grid__btn btn-remove">Remover</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <div class="modal__list-prince">
+                            <ul>
+                                <li> Subtotal <strong>$14.00</strong></li>
+                                <li> Desconto: <strong>$0.00</strong></li>
+                            </ul>
+                            <h4 class="modal__total-cart"> Total: $14.00</h4>
+
+                        </div>
+
+                        <div class="modal__btns">
+                            <a href="#" class="btn-border"> ir ao carrinho</a>
+                            <a href="#" class="btn-primary"> Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
+
+</body>
+
+</html>
